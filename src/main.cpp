@@ -2,7 +2,7 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <Wire.h>
-#include "Dps310.h"
+#include <Dps3xx.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include "SHT2x.h"
@@ -24,7 +24,7 @@ float_t relPress = 0;
 float_t voltage = 0;
 float_t humidity = 0;
 
-Dps310 Dps310PressureSensor = Dps310();
+Dps3xx Dps310PressureSensor = Dps3xx();
 SHT2x sht;
 
 float_t calculatePressureSeaLevel(float_t temperature, float_t pressure, uint16_t altitude);
