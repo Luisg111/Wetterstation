@@ -1,7 +1,7 @@
 # weather station
 
 a weather station using an esp8266 microcontroller.
-Sends data over WiFi to 
+Sends data over WiFi to the server where the data is stored.
 
 ## components
 - ESP8266 Microcontroller
